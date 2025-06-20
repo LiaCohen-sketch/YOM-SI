@@ -19,4 +19,6 @@ img{
     padding:40px;
     gap:50px;
     flex-wrap:wrap;
+    margin:auto;
+    justify-content: center;
 }
