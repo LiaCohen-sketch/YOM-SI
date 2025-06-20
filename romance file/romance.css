@@ -18,4 +18,5 @@ img{
     display:flex;
     padding:40px;
     gap:50px;
+    flex-wrap:wrap;
 }
