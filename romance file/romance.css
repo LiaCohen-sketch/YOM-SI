@@ -24,6 +24,8 @@
   }
   
   .card {
+    font-family: "Old Standard TT", serif;
+
     width: 260px;
     height: 350px;
     perspective: 1000px;
