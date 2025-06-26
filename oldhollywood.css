@@ -38,7 +38,7 @@ body{
     width:100vw;
     display: flex;
     justify-content:space-around;
-    height:500px
+    height: 350px;
 }
 
 #tfaoh{
@@ -50,6 +50,7 @@ body{
     background-color: #faf2e3;
     width:100vw;
     justify-content:center;
+    margin-top:10px;
 }
 
 .actors{
