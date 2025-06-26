@@ -11,7 +11,9 @@ async function movies(){
          const bananasImg = document.getElementById("img1");
          bananasImg.src = results.data[1][1];
          const bananasInfo = document.getElementById("p1");
-         bananasInfo.src = results.data[1][2];
+         bananasInfo.textContent = results.data[1][2];
+         const bananasName = document.getElementById("s1");
+         bananasName.textContent = results.data[1][0];
 
 
     }});
