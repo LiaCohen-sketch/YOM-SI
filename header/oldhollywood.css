@@ -28,3 +28,24 @@ body{
     display:flex;
     justify-content: center;
 }
+
+#famousactors{
+    background-color: #faf2e3;
+    width:100vw;
+}
+
+#merilyn{
+    height:300px;
+}
+
+#charli{
+    height:300px;
+}
+
+#elizabeth{
+    height:300px;
+}
+
+#humphry{
+    height:300px;
+}
