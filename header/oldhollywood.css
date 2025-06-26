@@ -38,7 +38,7 @@ body{
     width:100vw;
     display: flex;
     justify-content:space-around;
-
+    height:500px
 }
 
 #tfaoh{
@@ -53,10 +53,12 @@ body{
 }
 
 .actors{
-    height:300px;
-    opacity: 0.6;
+    height:200px;
+    opacity: 0.7;
     transform: scale(1);
     transition: all 0.4s ease;
+    border: none;
+    background: none;
 }
 
 .actors:hover {
