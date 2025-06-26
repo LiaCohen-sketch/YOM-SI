@@ -29,6 +29,19 @@ async function movies(){
          const TGR_name = document.getElementById("s3");
          TGR_name.textContent = results.data[3][0];
 
+         const MT_img = document.getElementById("img4");
+         MT_img.src = results.data[4][1];
+         const MT_info = document.getElementById("p4");
+         MT_info.textContent = results.data[4][2];
+         const MT_name = document.getElementById("s4");
+         MT_name.textContent = results.data[4][0];
+
+         const TGD_img = document.getElementById("img5");
+         TGD_img.src = results.data[5][1];
+         const TGD_info = document.getElementById("p5");
+         TGD_info.textContent = results.data[5][2];
+         const TGD_name = document.getElementById("s5");
+         TGD_name.textContent = results.data[5][0];
 
     }});
 
