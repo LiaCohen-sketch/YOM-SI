@@ -43,6 +43,19 @@ async function movies(){
          const TGD_name = document.getElementById("s5");
          TGD_name.textContent = results.data[5][0];
 
+         const opera_img = document.getElementById("img6");
+         opera_img.src = results.data[6][1];
+         const opera_info = document.getElementById("p6");
+         opera_info.textContent = results.data[6][2];
+         const opera_name = document.getElementById("s6");
+         opera_name.textContent = results.data[6][0];
+
+         const ds_img = document.getElementById("img7");
+         ds_img.src = results.data[7][1];
+         const ds_info = document.getElementById("p7");
+         ds_info.textContent = results.data[7][2];
+         const ds_name = document.getElementById("s7");
+         ds_name.textContent = results.data[7][0];
     }});
 
     console.log(data);
