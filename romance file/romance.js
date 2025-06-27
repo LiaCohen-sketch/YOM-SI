@@ -50,6 +50,21 @@
             const gwtw_Name = document.getElementById("s6");
             gwtw_Name.textContent = results.data[14][0];
 
+            const tgg_Img = document.getElementById("img7");
+            tgg_Img.src = results.data[15][1];
+            const tgg_Info = document.getElementById("p7");
+            tgg_Info.textContent = results.data[15][2];
+            const tgg_Name = document.getElementById("s7");
+            tgg_Name.textContent = results.data[15][0];
+
+            const m_Img = document.getElementById("img8");
+            m_Img.src = results.data[16][1];
+            const m_Info = document.getElementById("p8");
+            m_Info.textContent = results.data[16][2];
+            const m_Name = document.getElementById("s8");
+            m_Name.textContent = results.data[16][0];
+
+
         }});
 
         console.log(data);
