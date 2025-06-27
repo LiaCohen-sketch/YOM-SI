@@ -56,6 +56,14 @@ async function movies(){
          ds_info.textContent = results.data[7][2];
          const ds_name = document.getElementById("s7");
          ds_name.textContent = results.data[7][0];
+
+         const tj_img = document.getElementById("img8");
+         tj_img.src = results.data[8][1];
+         const tj_info = document.getElementById("p8");
+         tj_info.textContent = results.data[8][2];
+         const tj_name = document.getElementById("s8");
+         tj_name.textContent = results.data[8][0];
+
     }});
 
     console.log(data);
