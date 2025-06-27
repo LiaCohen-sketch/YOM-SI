@@ -8,19 +8,19 @@ async function movies(){
         complete: function(results) {
          console.log(results.data);
 
-         const bananasImg = document.getElementById("img1");
-         bananasImg.src = results.data[1][1];
-         const bananasInfo = document.getElementById("p1");
-         bananasInfo.textContent = results.data[1][2];
-         const bananasName = document.getElementById("s1");
-         bananasName.textContent = results.data[1][0];
+         const SN_img = document.getElementById("img1");
+         SN_img.src = results.data[17][1];
+         const SN_info = document.getElementById("p1");
+         SN_info.textContent = results.data[17][2];
+         const SN_name = document.getElementById("s1");
+         SN_name.textContent = results.data[17][0];
 
-         const TMTR_img = document.getElementById("img2");
-         TMTR_img.src = results.data[2][1];
-         const TMTR_info = document.getElementById("p2");
-         TMTR_info.textContent = results.data[2][2];
-         const TMTR_name = document.getElementById("s2");
-         TMTR_name.textContent = results.data[2][0];
+         const TA_img = document.getElementById("img2");
+         TA_img.src = results.data[18][1];
+         const TA_info = document.getElementById("p2");
+         TA_info.textContent = results.data[18][2];
+         const TA_name = document.getElementById("s2");
+         TA_name.textContent = results.data[18][0];
 
          const TGR_img = document.getElementById("img3");
          TGR_img.src = results.data[3][1];
