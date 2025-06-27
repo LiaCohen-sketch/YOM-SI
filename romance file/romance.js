@@ -29,6 +29,13 @@
             const ah_Name = document.getElementById("s3");
             ah_Name.textContent = results.data[11][0];
 
+            const grease_Img = document.getElementById("img4");
+            grease_Img.src = results.data[12][1];
+            const grease_Info = document.getElementById("p4");
+            grease_Info.textContent = results.data[12][2];
+            const grease_Name = document.getElementById("s4");
+            grease_Name.textContent = results.data[12][0];
+
         }});
 
         console.log(data);
