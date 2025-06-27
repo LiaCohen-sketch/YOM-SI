@@ -36,6 +36,20 @@
             const grease_Name = document.getElementById("s4");
             grease_Name.textContent = results.data[12][0];
 
+            const rh_Img = document.getElementById("img5");
+            rh_Img.src = results.data[13][1];
+            const rh_Info = document.getElementById("p5");
+            rh_Info.textContent = results.data[13][2];
+            const rh_Name = document.getElementById("s5");
+            rh_Name.textContent = results.data[13][0];
+
+            const gwtw_Img = document.getElementById("img6");
+            gwtw_Img.src = results.data[14][1];
+            const gwtw_Info = document.getElementById("p6");
+            gwtw_Info.textContent = results.data[14][2];
+            const gwtw_Name = document.getElementById("s6");
+            gwtw_Name.textContent = results.data[14][0];
+
         }});
 
         console.log(data);
