@@ -43,26 +43,26 @@ async function movies(){
          const pinocchio_name = document.getElementById("s5");
          pinocchio_name.textContent = results.data[21][0];
 
-         const opera_img = document.getElementById("img6");
-         opera_img.src = results.data[6][1];
-         const opera_info = document.getElementById("p6");
-         opera_info.textContent = results.data[6][2];
-         const opera_name = document.getElementById("s6");
-         opera_name.textContent = results.data[6][0];
+         const dumbo_img = document.getElementById("img6");
+         dumbo_img.src = results.data[22][1];
+         const dumbo_info = document.getElementById("p6");
+         dumbo_info.textContent = results.data[22][2];
+         const dumbo_name = document.getElementById("s6");
+         dumbo_name.textContent = results.data[22][0];
 
-         const ds_img = document.getElementById("img7");
-         ds_img.src = results.data[7][1];
-         const ds_info = document.getElementById("p7");
-         ds_info.textContent = results.data[7][2];
-         const ds_name = document.getElementById("s7");
-         ds_name.textContent = results.data[7][0];
+         const Cinderella_img = document.getElementById("img7");
+         Cinderella_img.src = results.data[23][1];
+         const Cinderella_info = document.getElementById("p7");
+         Cinderella_info.textContent = results.data[23][2];
+         const Cinderella_name = document.getElementById("s7");
+         Cinderella_name.textContent = results.data[23][0];
 
-         const tj_img = document.getElementById("img8");
-         tj_img.src = results.data[8][1];
-         const tj_info = document.getElementById("p8");
-         tj_info.textContent = results.data[8][2];
-         const tj_name = document.getElementById("s8");
-         tj_name.textContent = results.data[8][0];
+         const sb_img = document.getElementById("img8");
+         sb_img.src = results.data[24][1];
+         const sb_info = document.getElementById("p8");
+         sb_info.textContent = results.data[24][2];
+         const sb_name = document.getElementById("s8");
+         sb_name.textContent = results.data[24][0];
 
     }});
 
