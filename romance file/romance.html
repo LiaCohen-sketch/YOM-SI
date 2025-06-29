@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="romance.css">
+    <script src="romance.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <title>Old Romance Movies</title>
 </head>
 <style>
@@ -19,10 +21,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Casablanca" src="https://third-ear.com/wp-content/uploads/2022/07/images4.jpg">
+              <img class="romance" alt="Casablanca" id="img1">
             </div>
             <div class="card-back">
-              <p><strong>Casablanca</strong><br>A classic WWII romance in Morocco.</p>
+              <h2 id="s1"></h2>
+              <br>
+              <p id="p1"></p>
             </div>
           </div>
         </div>
@@ -30,10 +34,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="The Shop Around The Corner" src="https://filmforum.org/do-not-enter-or-modify-or-erase/client-uploads/thumbs/Shope-Around-the-Corner_WEBSITE_IN-TEXT1520.jpg">
+              <img class="romance" alt="The Shop Around The Corner" id="img2">
             </div>
             <div class="card-back">
-              <p><strong>The Shop Around The Corner</strong><br>Two coworkers clash, not knowing they’re pen pals.</p>
+              <h2 id="s2"></h2>
+              <br>
+              <p id="p2"></p>            
             </div>
           </div>
         </div>
@@ -41,10 +47,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Annie Hall" src="https://lh5.googleusercontent.com/proxy/JYn_9AQVaef2fesUyiAw85g3v5Eyp4-pu0GYx59puL60SLb0yX6XZWlMCzShbcqKlUIBQ8Kllmj5Bw9nVA">
+              <img class="romance" alt="Annie Hall" id="img3">
             </div>
             <div class="card-back">
-              <p><strong>Annie Hall</strong><br>A quirky and intellectual romance in NYC.</p>
+              <h2 id="s3"></h2>
+              <br>
+              <p id="p3"></p>            
             </div>
           </div>
         </div>
@@ -52,10 +60,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Grease" src="https://m.media-amazon.com/images/I/61V2hfiHJuL.jpg">
+              <img class="romance" alt="Grease" id="img4">
             </div>
             <div class="card-back">
-              <p><strong>Grease</strong><br>1950s high school love, dancing, and drama.</p>
+              <h2 id="s4"></h2>
+              <br>
+              <p id="p4"></p>
             </div>
           </div>
         </div>
@@ -63,10 +73,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Roman Holiday" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIDowtUvuWZCAZl4Lcu30DjE39vHaE2gwaGw&s">
+              <img class="romance" alt="Roman Holiday" id="img5">
             </div>
             <div class="card-back">
-              <p><strong>Roman Holiday</strong><br>A princess escapes for a day in Rome.</p>
+              <h2 id="s5"></h2>
+              <br>
+              <p id="p5"></p>
             </div>
           </div>
         </div>
@@ -74,10 +86,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Gone With The Wind" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/gone-with-the-wind-iconic-scene-globe-photos.jpg">
+              <img class="romance" alt="Gone With The Wind" id="img6">
             </div>
             <div class="card-back">
-              <p><strong>Gone With The Wind</strong><br>An epic tale of love during the Civil War.</p>
+              <h2 id="s6"></h2>
+              <br>
+              <p id="p6"></p>
             </div>
           </div>
         </div>
@@ -85,10 +99,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="The Great Gatsby" src="https://i.pinimg.com/736x/9f/3f/8b/9f3f8b92360fa7e414762c51f41f74c7.jpg">
+              <img class="romance" alt="The Great Gatsby" id="img7">
             </div>
             <div class="card-back">
-              <p><strong>The Great Gatsby</strong><br>A rich man's pursuit of lost love in the Roaring Twenties.</p>
+              <h2 id="s7"></h2>
+              <br>
+              <p id="p7"></p>            
             </div>
           </div>
         </div>
@@ -96,10 +112,12 @@
         <div class="card">
           <div class="card-inner">
             <div class="card-front">
-              <img class="romance" alt="Manhattan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2lF77k8DsEsD4F3P_c_glJ8SFRTSkGgFtw&s">
+              <img class="romance" alt="Manhattan" id="img8">
             </div>
             <div class="card-back">
-              <p><strong>Manhattan</strong><br>A romantic ode to New York and modern relationships.</p>
+              <h2 id="s8"></h2>
+              <br>
+              <p id="p8"></p> 
             </div>
           </div>
         </div>
