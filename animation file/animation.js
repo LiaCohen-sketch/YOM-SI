@@ -71,4 +71,43 @@ async function movies(){
 
 }
 
+
+
 movies();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const animatedMovies = [
+        "Snow White",
+        "The Aristocats",
+        "Robin Hood",
+        "The Many Adventures of Winnie the Pooh",
+        "Pinocchio",
+        "Dumbo",
+        "Cinderella",
+        "Sleeping Beauty"
+      ];
+      
+  
+    document.querySelectorAll(".list").forEach((fav_list, index) => {
+      const title = animatedMovies[index] || "Unknown Movie";
+      fav_list.innerHTML = `
+        <div class="add">
+          <button id="add" class="add-btn" data-name="${title}" onclick="add(this)">+</button>
+          <button id="ad" class="add-text">Add To favorite</button>
+        </div>
+      `;
+    });
+  
+    window.add = function(button) {
+        const movieName = button.getAttribute('data-name');
+        console.log("Add clicked for:", movieName);
+      
+        // Create <li> and add to the list
+        const li = document.createElement("li");
+        li.textContent = movieName;
+        document.getElementById("fav_list").appendChild(li);
+      };
+    })      
+  
+
+  
