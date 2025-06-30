@@ -82,3 +82,81 @@
     flex-direction:column;
   }
   
+
+  .add {
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    gap: 0;
+    font-family: "Old Standard TT", serif;
+
+}
+
+
+#add {
+    font-family: "Old Standard TT", serif;
+
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin-left: -55px; /* fixed position offset */
+    z-index: 3;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#add:hover {
+    transform: rotate(90deg); /* rotate only, no horizontal move */
+    color: black;
+    background-color: rgb(233, 232, 232);
+}
+
+#ad {
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    font-family: "Old Standard TT", serif;
+    width: 220px;
+    padding: 6px 10px;
+    margin: 0 -50px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    /* Start off 80px left */
+    transform: translateX(-70px);
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+#add:hover + #ad {
+    opacity: 1;
+    pointer-events: auto;
+    /* Slide in past the +, ending 60px right */
+    transform: translateX(10px);
+    color: black;
+    background-color: rgb(233, 232, 232);
+    transition-delay: 0.1s;
+}
+
+
+
+#add:hover + #ad{
+    display:block;
+    color:black;
+    background-color:rgb(233, 232, 232);
+
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
