@@ -1,0 +1,19 @@
+/* font-family: "Old Standard TT", serif; - paragraphs */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+/* font-family: "UoqMunThenKhung", serif; - titles */
+@import url('https://fonts.googleapis.com/css2?family=UoqMunThenKhung&display=swap');
+body{
+        background-color: #faf2e3;
+}
+
+.title{
+    font-family: "UoqMunThenKhung", serif;
+    font-size: 250px;
+    margin-top:0px;
+    
+}
+
+.aligningtitle{
+    display:flex;
+    text-align: center;
+}
