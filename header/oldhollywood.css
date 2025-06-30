@@ -35,10 +35,10 @@ body{
 
 #famousactors{
     background-color: #faf2e3;
-    width:100vw;
+    /* width:100vw; */
     display: flex;
     justify-content:space-around;
-    height: 350px;
+    height: 330px;
 }
 
 #tfaoh{
@@ -49,8 +49,9 @@ body{
     display:flex;
     background-color: #faf2e3;
     width:100vw;
+    /* height:1200px; */
     justify-content:center;
-    margin-top:10px;
+    margin-top:20px;
 }
 
 .actors{
@@ -65,8 +66,4 @@ body{
 .actors:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-
-#humphrey{
-    width:200px;
 }
