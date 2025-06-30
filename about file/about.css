@@ -1,5 +1,5 @@
-/* font-family: "Dancing Script", cursive; - paragraphes */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/*  font-family: "Parisienne", cursive; - paragrapes */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 /* font-family: "UoqMunThenKhung", serif; - titles */
 @import url('https://fonts.googleapis.com/css2?family=UoqMunThenKhung&display=swap');
 body{
@@ -30,9 +30,8 @@ body{
 }
 
 .abouttext{
-    font-family: "Dancing Script", cursive;
+  font-family: "Parisienne", cursive;
     font-size:25px;
-    margin-top:-100px;
-    /* margin-left:20px; */
+    margin-top:-80px;
     text-align: center;
 }
