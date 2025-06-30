@@ -1,5 +1,5 @@
     async function movies(){
-        const response = await fetch("../../movies.csv");
+        const response = await fetch("../movies.csv");
 
         const data = await response.text();
         
