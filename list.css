@@ -83,27 +83,58 @@
     font-size:50px;
 }
 
-#favorites-list{
-    margin:auto 0;
-    width:400px;
-    font-size:30px;
-    background-color:rgb(192, 192, 192, 0.5);
-    padding:10px;
-    direction:ltr;
-    border-radius:20px;
-    font-family: "Old Standard TT", serif;
-    gap:10px;
-
+#mList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 50px 160px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgb(235, 239, 243);
+    border-radius: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    overflow-wrap: break-word; /* Prevent wide content overflow */
 }
 
-#mList{
-    text-align:center;
-    margin:0 auto;
-    gap:10px;
-    background-color:aliceblue;
-    width:70%;
-    justify-content: center;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+
+#favorites-list {
+    
+    display: contents; /* This lets each <li> be placed directly in the grid */
+}
+
+#favorites-list li {
+    list-style: none;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    font-size: 24px;
+    height:60px;
+    box-sizing: border-box;
+}
+
+
+#favorites-list li:hover{
+    background-color: rgb(151, 151, 151, 0.4);
+    color:white;
+    transition:0.3s;
+    
+}
+
+#favorites-list li:active{
+    background-color: rgba(0, 0, 0, 0.4);
+    color:white;
+    transition:0.3s;
+    
+}
+
+#clear{
+    font-family: "Dancing Script", cursive;
+    font-size:24px;
+    padding:10px;
+
 }
