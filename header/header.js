@@ -71,10 +71,9 @@ header.innerHTML = `
   <div class="header">
       <a href="#" class="logo">MOVIES</a>
       <div class="header-right">
-          <a href="#">Comedy</a>
-          <a href="#">Romance</a>
-          <a href="#">Action</a>
-          <a href="#">Animation</a>
+          <a href="../comedy file/comedy.html">Comedy</a>
+          <a href="../romance file/romance.html">Romance</a>
+          <a href="../animation file/animation.html">Animation</a>
           <input type="text" class="search-bar" placeholder="Search...">
       </div>
   </div>
