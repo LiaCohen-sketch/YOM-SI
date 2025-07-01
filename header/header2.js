@@ -1,18 +1,18 @@
 let header = document.getElementById("header2");
 header.innerHTML = `
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color:rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
         opacity: 0.9;
         padding: 20px 10px;
         font-family: "Dancing Script", cursive;
         flex-wrap: wrap;
-        width:100vw;
-        margin-top:0px
+        width: 100vw;
+        margin-top: 0px;
     }
 
     .header a {
@@ -78,6 +78,8 @@ header.innerHTML = `
           <a href="animation file/animation.html">Animation</a>
           <a href="list file/list.html">Favorite</a>
           <input id="search" type="text" class="search-bar" placeholder="Search...">
+          <button id="search-btn">🔍</button>
       </div>
   </div>
+
 `;

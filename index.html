@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="header2"></header>
-    <script src="header/header2.js"></script>
+    <script src="../YOM-SI/header/header2.js"></script>
     <div id = "explaindiv">
     <h1 class = "titles">Old Hollywood</h1>
     <div id = "pexplanation">
@@ -33,5 +33,49 @@
   <img src="images/Humphrey_Bogart.png" style="height:300px;">
 </a>
 </div>
+
+
+<!-- Include PapaParse if not already included -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const interval = setInterval(() => {
+    const btn = document.getElementById("search-btn");
+    if (btn) {
+      clearInterval(interval);
+      btn.addEventListener("click", search);
+    }
+  }, 50); // wait until #search-btn exists
+});
+
+async function search() {
+  const response = await fetch("movies.csv");
+  const text = await response.text();
+
+  Papa.parse(text, {
+    header: true,
+    complete: function(results) {
+      const searchTerm = document.getElementById("search").value.trim().toLowerCase();
+
+      const found = results.data.find(row =>
+        row.name && row.name.trim().toLowerCase() === searchTerm
+      );
+
+      if (found) {
+        const genre = found.genra.trim().toLowerCase();
+
+        console.log("Found:", found.name, "Genre:", genre);
+
+        if (genre === "a") {
+          window.location.href = "animation file/animation.html";
+        } else if (genre === "r") {
+          window.location.href = "romance file/romance.html";
+        } else if (genre === "c") {
+          window.location.href = "comedy file/comedy.html";
+        }
+      } else {
+        window.location.href = "../error.html;";}}})}
+  </script>
 </body>
 </html>
