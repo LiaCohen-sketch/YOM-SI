@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="list.css">
-    <script src="list.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
-    <title>Favorite List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="list.css">
 </head>
 <body>
-        <h1>Favorites</h1>
-        <ul id="favorites-list"></ul>
-      
-        <script>
-          document.addEventListener("DOMContentLoaded", () => {
-            const list = document.getElementById("favorites-list");
-            const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-      
-            if (favorites.length === 0) {
-              list.innerHTML = "<li>No favorite movies yet.</li>";
-            } else {
-              favorites.forEach(movie => {
-                const li = document.createElement("li");
-                li.textContent = movie;
-                list.appendChild(li);
-              });
-            }
-          });
-        </script>
-      </body>
+  <h1>Favorite Movies</h1>
+  <ul id="favorites-list"></ul>
+
+  <button onclick="clearFavorites()">Clear All</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const list = document.getElementById("favorites-list");
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+      if (favorites.length === 0) {
+        list.innerHTML = "<li>No favorite movies yet.</li>";
+      } else {
+        favorites.forEach(movie => {
+          const li = document.createElement("li");
+          li.textContent = movie;
+          list.appendChild(li);
+        });
+      }
+    });
+
+    function clearFavorites() {
+      localStorage.removeItem("favorites");
+      location.reload(); // reload the page to reflect changes
+    }
+  </script>
+</body>
 </html>
