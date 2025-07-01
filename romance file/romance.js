@@ -103,9 +103,13 @@ window.add = function(button) {
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
   // Avoid duplicates
+
   if (!favorites.includes(movieName)) {
     favorites.push(movieName);
     localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert(`${movieName} has been added!`);
+  } else {
+    alert(`${movieName} is already in your favorites.`);
   }
 
   // Optionally update UI (e.g., show added message)
