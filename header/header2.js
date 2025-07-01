@@ -11,7 +11,7 @@ header.innerHTML = `
         padding: 20px 10px;
         font-family: "Dancing Script", cursive;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 98vw;
         margin-top: 0px;
     }
 
@@ -67,6 +67,7 @@ header.innerHTML = `
         .search-bar {
             width: 100%;
         }
+
     }
   </style>
 
