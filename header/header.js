@@ -75,7 +75,47 @@ header.innerHTML = `
           <a href="../romance file/romance.html">Romance</a>
           <a href="../animation file/animation.html">Animation</a>
           <a href="../list file/list.html">Favorite</a>
-          <input type="text" class="search-bar" placeholder="Search...">
+          <input id="search" type="text" class="search-bar" placeholder="Search...">
+          <button id="search-btn">🔍</button>
+
       </div>
   </div>
 `;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("search-btn");
+  
+    if (btn) {
+      btn.addEventListener("click", async () => {
+        const response = await fetch("../movies.csv"); // Update path as needed
+        const text = await response.text();
+  
+        Papa.parse(text, {
+          header: true,
+          complete: function (results) {
+            const searchTerm = document.getElementById("search").value.trim().toLowerCase();
+  
+            const found = results.data.find(row =>
+              row.name && row.name.trim().toLowerCase() === searchTerm
+            );
+  
+            if (found) {
+              const genre = found.genra.trim().toLowerCase();
+  
+              if (genre === "a") {
+                window.location.href = "../animation file/animation.html";
+              } else if (genre === "r") {
+                window.location.href = "../romance file/romance.html";
+              } else if (genre === "c") {
+                window.location.href = "../comedy file/comedy.html";
+              } else {
+                window.location.href = "../error.html";
+              }
+            } else {
+              window.location.href = "../error.html";
+            }
+          }
+        });
+      });
+    }
+  });
