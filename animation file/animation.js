@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const animatedMovies = [
         "Snow White",
         "The Aristocats",
-        "Robin Hood",
+        "Peter Pan",
         "The Many Adventures of Winnie the Pooh",
         "Pinocchio",
         "Dumbo",
@@ -108,7 +108,6 @@ window.add = function(button) {
   if (!favorites.includes(movieName)) {
     favorites.push(movieName);
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    alert(`${movieName} has been added!`);
   } else {
     alert(`${movieName} is already in your favorites.`);
   }

@@ -75,3 +75,35 @@
         opacity: 1;
     }
 }
+
+
+#fav_m{
+    text-align:center;
+    font-family: "Dancing Script", cursive;
+    font-size:50px;
+}
+
+#favorites-list{
+    margin:auto 0;
+    width:400px;
+    font-size:30px;
+    background-color:rgb(192, 192, 192, 0.5);
+    padding:10px;
+    direction:ltr;
+    border-radius:20px;
+    font-family: "Old Standard TT", serif;
+    gap:10px;
+
+}
+
+#mList{
+    text-align:center;
+    margin:0 auto;
+    gap:10px;
+    background-color:aliceblue;
+    width:70%;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
