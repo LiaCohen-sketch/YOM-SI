@@ -1,4 +1,4 @@
-let header = document.getElementById("header");
+let header = document.getElementById("header2");
 header.innerHTML = `
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
@@ -69,12 +69,12 @@ header.innerHTML = `
   </style>
 
   <div class="header">
-      <a href="../index.html" class="logo">MOVIES</a>
+      <a href="index.html" class="logo">MOVIES</a>
       <div class="header-right">
-          <a href="../comedy file/comedy.html">Comedy</a>
-          <a href="../romance file/romance.html">Romance</a>
-          <a href="../animation file/animation.html">Animation</a>
-          <a href="../list file/list.html">Favorite</a>
+          <a href="comedy file/comedy.html">Comedy</a>
+          <a href="romance file/romance.html">Romance</a>
+          <a href="animation file/animation.html">Animation</a>
+          <a href="list file/list.html">Favorite</a>
           <input type="text" class="search-bar" placeholder="Search...">
       </div>
   </div>

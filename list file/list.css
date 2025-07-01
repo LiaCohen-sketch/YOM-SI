@@ -98,7 +98,9 @@
     overflow-wrap: break-word; /* Prevent wide content overflow */
 }
 
-
+  body {
+    background-color: #d8d8d8;
+  }
 #favorites-list {
     
     display: contents; /* This lets each <li> be placed directly in the grid */
