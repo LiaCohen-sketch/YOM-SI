@@ -74,6 +74,7 @@ header.innerHTML = `
           <a href="../comedy file/comedy.html">Comedy</a>
           <a href="../romance file/romance.html">Romance</a>
           <a href="../animation file/animation.html">Animation</a>
+          <a href="../list file/list.html">Favorite</a>
           <input type="text" class="search-bar" placeholder="Search...">
       </div>
   </div>
