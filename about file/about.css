@@ -1,0 +1,37 @@
+/*  font-family: "Parisienne", cursive; - paragrapes */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/* font-family: "UoqMunThenKhung", serif; - titles */
+@import url('https://fonts.googleapis.com/css2?family=UoqMunThenKhung&display=swap');
+body{
+        background-color: #faf2e3;
+}
+
+.title{
+    font-family: "UoqMunThenKhung", serif;
+    font-size: 220px;
+    margin-top:-50px;
+    line-height: 1.5;
+}
+
+.aligningtitle{
+    position: relative;
+      font-size: 150px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+}
+
+.image{
+    position: absolute;
+      top: 80px; /* adjust to place the image over the text */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px; /* adjust image size */
+}
+
+.abouttext{
+  font-family: "Parisienne", cursive;
+    font-size:25px;
+    margin-top:-80px;
+    text-align: center;
+}

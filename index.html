@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="header/oldhollywood.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homePage - Old Hollywood</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/45/50/45/4550456d4b7da3fe813b42fefab0a9b8.jpg">
+
+
+</head>
+<body>
+    <header id="header2"></header>
+    <script src="../YOM-SI/header/header2.js"></script>
+    <div id = "explaindiv">
+    <h1 class = "titles">Old Hollywood</h1>
+    <div id = "pexplanation">
+    <p id = "explanation" class="paragraphes">Step back in time to the golden age of cinema. This site celebrates classic films, legendary stars, and the timeless style of Old Hollywood—from the 1920s to the 1960s.</p>
+</div>    
+</div>
+<div id = "tfaohdiv">
+        <h1 id = "tfaoh" class = "titles">Click The Pictures To Read About The famous actors of Old Hollywood!</h1>
+</div>
+<div id = "famousactors">
+    <a class = "actors" href="about file/aboutmerilyn.html">
+  <img src="images/Marilyn_Monroe.png" style="height:300px;">
+</a>
+<a class = "actors" href="about file/aboutcharlie.html">
+  <img src="images/Charli_Chaplin.png" style="height:300px;">
+</a>
+<a class = "actors" href="about file/aboutelizabeth.html">
+  <img src="images/Elizabeth_Taylor.png" style="height:300px;">
+</a>
+<a class = "actors" href="about file/abouthumphry.html">
+  <img src="images/Humphrey_Bogart.png" style="height:300px;">
+</a>
+</div>
+
+
+<!-- Include PapaParse if not already included -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const interval = setInterval(() => {
+    const btn = document.getElementById("search-btn");
+    if (btn) {
+      clearInterval(interval);
+      btn.addEventListener("click", search);
+    }
+  }, 50); // wait until #search-btn exists
+});
+
+async function search() {
+  const response = await fetch("movies.csv");
+  const text = await response.text();
+
+  Papa.parse(text, {
+    header: true,
+    complete: function(results) {
+      const searchTerm = document.getElementById("search").value.trim().toLowerCase();
+
+      const found = results.data.find(row =>
+        row.name && row.name.trim().toLowerCase() === searchTerm
+      );
+
+      if (found) {
+        const genre = found.genra.trim().toLowerCase();
+
+        console.log("Found:", found.name, "Genre:", genre);
+
+        if (genre === "a") {
+          window.location.href = "animation file/animation.html";
+        } else if (genre === "r") {
+          window.location.href = "romance file/romance.html";
+        } else if (genre === "c") {
+          window.location.href = "comedy file/comedy.html";
+        }
+      } else {
+        window.location.href = "error.html;";}}})}
+  </script>
+</body>
+</html>

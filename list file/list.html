@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="../list file/list.css">
+        <header id="header"></header>
+      <script src="../../YOM-SI/header/header.js"></script>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+        </style>
+<body>
+  <h1 id="fav_m">Favorite Movies</h1>
+  <div id="mList">
+      <ul id="favorites-list"></ul>
+
+  </div>
+
+  <button id="clear" onclick="clearFavorites()">Clear All</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const list = document.getElementById("favorites-list");
+      const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+      if (favorites.length === 0) {
+        list.innerHTML = "<li>No favorite movies yet.</li>";
+      } else {
+        favorites.forEach(movie => {
+          const li = document.createElement("li");
+          li.textContent = movie;
+          list.appendChild(li);
+        });
+      }
+    });
+
+    function clearFavorites() {
+      localStorage.removeItem("favorites");
+      location.reload(); // reload the page to reflect changes
+    }
+  </script>
+</body>
+</html>

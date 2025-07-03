@@ -1,88 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #fbf4e4;
-  }
-  
-  h1 {
-    text-align: center;
-    font-family: "Dancing Script", cursive;
-    font-size: 60px;
-  }
-  
-  #Cmovies {
-    display: flex;
-    padding: 40px;
-    gap: 50px;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-  }
-  
-  .card {
-    font-family: "Old Standard TT", serif;
-
-    width: 260px;
-    height: 350px;
-    perspective: 1000px;
-  }
-  
-  .card-inner {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  
-  .card:hover .card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .card-front,
-  .card-back {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    box-shadow: rgb(144, 144, 144) 5px 5px 5px;
-
-  }
-  
-  .card-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    
-  }
-
-  .card-front{
-    box-shadow: black 5px 5px 5px;
-  }
-  
-  .card-back {
-    
-    background-color: #222;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    box-sizing: border-box;
-    flex-direction:column;
-  }
-  
-  .add {
+.add {
     display: flex;
     flex-direction: row;
     text-align:center;
@@ -158,4 +74,75 @@
     100% {
         opacity: 1;
     }
+}
+
+
+#fav_m{
+    text-align:center;
+    font-family: "Dancing Script", cursive;
+    font-size:50px;
+}
+
+#mList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 50px 160px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgb(235, 239, 243);
+    border-radius: 20px;
+    box-sizing: border-box;
+    justify-items: center;
+    overflow-wrap: break-word; /* Prevent wide content overflow */
+}
+
+  body {
+    background-color: #d8d8d8;
+  }
+#favorites-list {
+    
+    display: contents; /* This lets each <li> be placed directly in the grid */
+}
+
+#favorites-list li {
+    list-style: none;
+    background-color: white;
+    padding: 0 15px;           /* remove top & bottom padding for better centering */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    font-size: 24px;
+    height: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    line-height: normal;      /* prevent weird line height */
+}
+
+
+#favorites-list li:hover{
+    background-color: rgb(151, 151, 151, 0.4);
+    color:white;
+    transition:0.3s;
+    
+}
+
+#favorites-list li:active{
+    background-color: rgba(0, 0, 0, 0.4);
+    color:white;
+    transition:0.3s;
+    
+}
+
+#clear{
+    font-family: "Dancing Script", cursive;
+    font-size:24px;
+    padding:10px;
+
 }
