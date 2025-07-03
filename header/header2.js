@@ -1,4 +1,4 @@
-let header = document.getElementById("header2");
+const header = document.getElementById("header2");
 header.innerHTML = `
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
@@ -67,7 +67,6 @@ header.innerHTML = `
         .search-bar {
             width: 100%;
         }
-
     }
   </style>
 
@@ -82,5 +81,4 @@ header.innerHTML = `
           <button id="search-btn">🔍</button>
       </div>
   </div>
-
 `;
