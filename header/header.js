@@ -14,6 +14,8 @@ header.innerHTML = `
     }
 
     .header a {
+        padding: 30px 20px;
+        min-height: 80px;
         color: black;
         text-align: center;
         padding: 12px;
