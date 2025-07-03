@@ -6,17 +6,18 @@ header.innerHTML = `
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #ffffff;
-        opacity: 0.6;
+        background-color:rgb(0, 0, 0);
+        // opacity: 0.6;
         padding: 20px 10px;
         font-family: "Dancing Script", cursive;
         flex-wrap: wrap;
+        color:#faf2e3;
     }
 
     .header a {
         padding: 30px 20px;
         min-height: 60px;
-        color: black;
+        color: #faf2e3;
         text-align: center;
         padding: 12px;
         text-decoration: none;
@@ -31,8 +32,8 @@ header.innerHTML = `
     }
 
     .header a:hover {
-        background-color: #ddd;
-        color: black;
+        background-color: #faf2e3;
+        color:rgb(0, 0, 0);
     }
 
     .header-right {
