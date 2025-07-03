@@ -15,7 +15,7 @@ header.innerHTML = `
 
     .header a {
         padding: 30px 20px;
-        min-height: 80px;
+        min-height: 60px;
         color: black;
         text-align: center;
         padding: 12px;
