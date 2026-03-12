@@ -101,17 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
 window.add = function(button) {
   const movieName = button.getAttribute('data-name');
 
-  // Get existing favorites from localStorage or initialize empty array
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-  // Avoid duplicates
   if (!favorites.includes(movieName)) {
     favorites.push(movieName);
     localStorage.setItem("favorites", JSON.stringify(favorites));
   } else {
     alert(`${movieName} is already in your favorites.`);
   }
-  // Optionally update UI (e.g., show added message)
   const li = document.createElement("li");
   li.textContent = movieName;
   document.getElementById("fav_list").appendChild(li);
