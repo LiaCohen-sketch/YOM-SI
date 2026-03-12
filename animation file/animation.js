@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
       fav_list.innerHTML = `
         <div class="add">
           <button id="add" class="add-btn" data-name="${title}" onclick="add(this)">+</button>
-          <button id="ad" class="add-text">Add To favorite</button>
+          <button id="ad" class="add-text">Add To Favorite</button>
         </div>
       `;
     });
