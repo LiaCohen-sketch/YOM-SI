@@ -7,11 +7,12 @@ header.innerHTML = `
         justify-content: space-between;
         align-items: center;
         background-color:rgb(0, 0, 0);
-        // opacity: 0.6;
+        opacity: 0.9;
         padding: 20px 10px;
         font-family: "Dancing Script", cursive;
         flex-wrap: wrap;
         color:#faf2e3;
+      
     }
 
     .header a {
