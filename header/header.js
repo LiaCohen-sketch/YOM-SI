@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     if (btn) {
       btn.addEventListener("click", async () => {
-        const response = await fetch("../movies.csv"); // Update path as needed
+        const response = await fetch("../movies.csv");
         const text = await response.text();
   
         Papa.parse(text, {

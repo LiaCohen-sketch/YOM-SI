@@ -91,7 +91,7 @@
           fav_list.innerHTML = `
             <div class="add">
               <button id="add" class="add-btn" data-name="${title}" onclick="add(this)">+</button>
-              <button id="ad" class="add-text">Add To favorite</button>
+              <button id="ad" class="add-text">Add To Favorite</button>
             </div>
           `;
         });
@@ -99,10 +99,7 @@
 window.add = function(button) {
   const movieName = button.getAttribute('data-name');
 
-  // Get existing favorites from localStorage or initialize empty array
   let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-
-  // Avoid duplicates
 
   if (!favorites.includes(movieName)) {
     favorites.push(movieName);
@@ -111,7 +108,6 @@ window.add = function(button) {
     alert(`${movieName} is already in your favorites.`);
   }
 
-  // Optionally update UI (e.g., show added message)
   const li = document.createElement("li");
   li.textContent = movieName;
   document.getElementById("fav_list").appendChild(li);
